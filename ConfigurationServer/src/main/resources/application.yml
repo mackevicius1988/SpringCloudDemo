@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mackevicius1988/config-repo
+server:
+  port: 8888

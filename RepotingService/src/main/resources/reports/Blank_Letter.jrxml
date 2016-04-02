@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2015-12-22T10:24:12 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa5e7ff4-024f-4c0f-a84f-b9b526b9c3bb">
+	<parameter name="Title" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<field name="address" class="com.csc.reports.model.Adress"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="40" uuid="3aa4b025-fad6-4e3d-841b-48746c10e125"/>
+				<text><![CDATA[Darbuotjuojai]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="475" height="30" uuid="26ba4e6b-4775-40a7-9a50-5c78e1500c7e"/>
+				<textField>
+					<reportElement x="0" y="0" width="50" height="30" uuid="78cbabe6-8370-411b-98ab-a3ee438d6839"/>
+					<box padding="2" topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+					<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="55" y="0" width="100" height="30" uuid="78cbabe6-8370-411b-98ab-a3ee438d6839"/>
+					<box padding="2" topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="160" y="0" width="100" height="30" uuid="78cbabe6-8370-411b-98ab-a3ee438d6839"/>
+					<box padding="2" topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+					<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="265" y="0" width="210" height="30" uuid="78cbabe6-8370-411b-98ab-a3ee438d6839"/>
+					<box padding="2" topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+					<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="83" splitType="Stretch">
+			<image hAlign="Center" vAlign="Bottom">
+				<reportElement positionType="FixRelativeToBottom" x="0" y="33" width="85" height="50" uuid="4139b66f-249a-46fb-a009-d1600fda638b"/>
+				<imageExpression><![CDATA["C:/prj/csc/spring-cloud-demo/RepotingService/images.png"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>
